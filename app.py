@@ -10,9 +10,9 @@ def check_super_word(check_str, dictionary):
 
         if new_str in dictionary:  # Checking if each iteration of word is in the dictionary
             return True
+            # print(check_str + " is a super word")
         else:
-            print(check_str + " is not a super word")
-
+            continue
 
 # Combining integers and interlacing strings
 def combine_integers(a, b):
@@ -40,6 +40,7 @@ def merge_sort(arr):
             else:
                 arr[k] = right[j]
                 j += 1
+                print("count")
             k += 1
 
         # Checking if any element was left
@@ -55,6 +56,6 @@ def merge_sort(arr):
     return arr
 
 # Remove below comment to run function
-# print(check_super_word("print", ["pint", "pit", "hat"]))
+print(check_super_word("print", ["pint", "pit", "hat"]))
 # print(combine_integers(123, 456))
-print(merge_sort([1, 2, 6, 5, 4, 7, 8]))
+# print(merge_sort([1, 2, 6, 5, 4, 7, 8]))
